@@ -7,41 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1404C0CB5C9DB0CCAC963FA418B51B0C /* MPColorTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CF9DC99D13448ED7145B687299E8E6 /* MPColorTools-dummy.m */; };
+		1404C0CB5C9DB0CCAC963FA418B51B0C /* MPColorTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 118E72FD8587D7704A3FF7745F9C5C71 /* MPColorTools-dummy.m */; };
 		14D369C4EABD28C31ED5140C95FB6D9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ECA5F82C19F792E4F5146A01C56514 /* Foundation.framework */; };
-		19E17C3D18D6BC1654F5C1A72E6B2226 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 901932F53BBC9D79C40C5F8EC45887EE /* crypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20615FBE29FF842DCD667D7EE1BD648D /* IISideController.h in Headers */ = {isa = PBXBuildFile; fileRef = C38E197CEAC4D3A96933E6AF7DA7DE19 /* IISideController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19E17C3D18D6BC1654F5C1A72E6B2226 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AD72E158981621134C962BD4EDA346A /* crypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20615FBE29FF842DCD667D7EE1BD648D /* IISideController.h in Headers */ = {isa = PBXBuildFile; fileRef = 70791180B0B0157E9892FCEB9285787F /* IISideController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2989492A1A182744E36FD61DF1746D94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ECA5F82C19F792E4F5146A01C56514 /* Foundation.framework */; };
 		2A527629B49394DCCF201941728967A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ECA5F82C19F792E4F5146A01C56514 /* Foundation.framework */; };
 		35D01E974C7B360857837D99AED19222 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ECA5F82C19F792E4F5146A01C56514 /* Foundation.framework */; };
-		3620396299106F9BE5ADCC0C9BF6F8AF /* IIWrapController.h in Headers */ = {isa = PBXBuildFile; fileRef = D735A6A5AE9E3D9BEC06F0721F02D3CE /* IIWrapController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		397C219D940BB372BD1B1E93C3E2C27F /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 85A96B56CE66C167094936F4FA6A9646 /* ioapi.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		44ABB572D539F49C3533CFC4E01F560F /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = C241C96B78B323026A52E4DB6B33A492 /* IIViewDeckController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5229BD535B6C99B3B38BBE766C1C6D4D /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 36780ABDE20CAA8A937BE0C8C79A4FE4 /* SSZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A625CB2F55770EC6C705838411E6EC9 /* MPColorTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C36A90D62CEFA3F26C3C03D2370453A /* MPColorTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5DC1ED5335A400C5136194DB1DEEC26C /* IISideController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EBF08BF1B8EF21D382747541EFE36E /* IISideController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5EB4F27B76513AE918BA5AE0868E87C8 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = D5F84371FEF56F87BFBEE0C526FCEE8A /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3620396299106F9BE5ADCC0C9BF6F8AF /* IIWrapController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7960C0626E0E781D48FF22D8CD4AFBE4 /* IIWrapController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		397C219D940BB372BD1B1E93C3E2C27F /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = FEBFA0846D441B751CC9C2432AD35B9D /* ioapi.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		44ABB572D539F49C3533CFC4E01F560F /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = E15919D27A3FF528F3F9263882742DF4 /* IIViewDeckController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5229BD535B6C99B3B38BBE766C1C6D4D /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = D83D91AFABD956EBFDD3AD44BBE8E909 /* SSZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A625CB2F55770EC6C705838411E6EC9 /* MPColorTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 6892E0BAE00CF8AC2E6169F4BB0319EB /* MPColorTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DC1ED5335A400C5136194DB1DEEC26C /* IISideController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59C7C9F5955D385F56316CAB09DE844 /* IISideController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5EB4F27B76513AE918BA5AE0868E87C8 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 348EF45C13A4C3AF1DDBECE8437AC729 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70D801E0B95C23BCC270E4EC8659D463 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB254A0FF9C0E1ECCCC3CA36E6AC016 /* CoreGraphics.framework */; };
-		76F8C32A41C3CC3436474A9B53257A89 /* ViewDeck-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB71CC80D685ABB5802B1B22EDFAF97B /* ViewDeck-dummy.m */; };
+		76F8C32A41C3CC3436474A9B53257A89 /* ViewDeck-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED321C78C8DC4F192932EF4C1FAE2131 /* ViewDeck-dummy.m */; };
 		7E5EB21A793268AB9390FD404173C24F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ECA5F82C19F792E4F5146A01C56514 /* Foundation.framework */; };
-		7EEA007C9F3C9471FAF19CD0F69459B9 /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D215BA21D2E8BBA27DCBEA8B70C313 /* IIWrapController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		82FC12F67E83874B93592218E9FB4CA0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C698626A07272862C8EB51E94D886BFD /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		8A6C15AC99C8585350C03925E1123059 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = A171C22E5BEFAE34A5D24E4CC42034FE /* SSZipArchive.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		8AEFEF408F339CF60FA818DECBD72C34 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 6573347B0C837C29F6CBACD0ACFFB35F /* unzip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		993C297230A6D65F47265141C69C6E13 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 202880B2AB67E002DD88744F7EE409A2 /* ioapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9AFCCCC629A3747AEA62CB3C26C93B33 /* IIViewDeckController.h in Headers */ = {isa = PBXBuildFile; fileRef = B93C0EE297B1096D984A5BC516FCB5B8 /* IIViewDeckController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D2E94948780326DA3E478FCDBFC0DF4 /* MPColorTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F7553F3F55924C087DFD186071133F /* MPColorTools.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7EEA007C9F3C9471FAF19CD0F69459B9 /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = C35B996F144B47E0D71751F08B509696 /* IIWrapController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		82FC12F67E83874B93592218E9FB4CA0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CDD8E99BA6803CA8276771BEEB5661 /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8A6C15AC99C8585350C03925E1123059 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D50CE05788A7DADBB2BCA926868F93B /* SSZipArchive.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8AEFEF408F339CF60FA818DECBD72C34 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = CA6F93637BB4BAF3CEA5E71ABA39076F /* unzip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		993C297230A6D65F47265141C69C6E13 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA3AA801EAED59ADB6834CFCD89DC55 /* ioapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AFCCCC629A3747AEA62CB3C26C93B33 /* IIViewDeckController.h in Headers */ = {isa = PBXBuildFile; fileRef = 30E4CA4800695D9DAC4A870A54E5F36E /* IIViewDeckController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D2E94948780326DA3E478FCDBFC0DF4 /* MPColorTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F621883C23D731A5420BFCA8C7762ABF /* MPColorTools.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		AED0D9090A3BBA5B77F7876FFFEA95BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ECA5F82C19F792E4F5146A01C56514 /* Foundation.framework */; };
 		B4DFF55CB01F74EAD34B774EDB2C3B90 /* Pods-Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E586D8FF4DDC81BA20A6C394E3AC7514 /* Pods-Demo-dummy.m */; };
-		CCC69113B592CA6E0F8B50A9232EEE17 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DD547A49CE5960D97E70DD8BD437CE5 /* unzip.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CEBD5FC7CD3B5915A65767EE2195C2FB /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = C0F04A24E09414097A28F7DA5DEE607B /* zip.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D39826D4B10A6ACCDD4DA8D78D16D4DA /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 7C528E8A759B0F8A06F6F10F4919F9F9 /* zip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D7EAAE73890AF469DFA1817A04DD4CC5 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 79867E09DA9695D5C116AACA57894414 /* mztools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCC69113B592CA6E0F8B50A9232EEE17 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F52A0185E214E4C229A375F20DA4308 /* unzip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEBD5FC7CD3B5915A65767EE2195C2FB /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 21CF22646C29F8BC57455FFDE0FC7E7E /* zip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D39826D4B10A6ACCDD4DA8D78D16D4DA /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 867DBDCB2BFBFBC1D90BC59AB138286E /* zip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D7EAAE73890AF469DFA1817A04DD4CC5 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 415FF4EA824EA8D8A2FEDF8B93064E90 /* mztools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0719D702C378DC8D91F2DA065A69554 /* Pods-DemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAF707ECE17997BD3F97DC35BE48C78 /* Pods-DemoTests-dummy.m */; };
-		E3EEF14251DCB29709F99790A76A1F77 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 079FEAB109355F61270895B2075C61A2 /* mztools.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E3EEF14251DCB29709F99790A76A1F77 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 8225DB4F13E8C33739F4DD170C9D0210 /* mztools.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		E4BFBDE34C5B6520ABA9282DE82E51E4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64AB8C0A1E815C07C6F968F76F7E559 /* QuartzCore.framework */; };
-		FBE2A73BED6143CE332ABA42E5FA4E44 /* SSZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B1E7B65BAE04B859843E1688E0B195 /* SSZipArchive-dummy.m */; };
-		FC214077677D4F02E03C6C85F774E028 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E239C3CBC8205455BB17976A554C41 /* MBProgressHUD-dummy.m */; };
+		FBE2A73BED6143CE332ABA42E5FA4E44 /* SSZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 316EE4F14DEB786EAF9825E868D74348 /* SSZipArchive-dummy.m */; };
+		FC214077677D4F02E03C6C85F774E028 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5A9ED75BDA4D2A508223F54CDEAFCB /* MBProgressHUD-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,63 +97,65 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06B1E7B65BAE04B859843E1688E0B195 /* SSZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSZipArchive-dummy.m"; sourceTree = "<group>"; };
-		079FEAB109355F61270895B2075C61A2 /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mztools.c; path = SSZipArchive/minizip/mztools.c; sourceTree = "<group>"; };
 		08D6C1148FED9E05FF2892986885571F /* libViewDeck.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libViewDeck.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		17CF9DC99D13448ED7145B687299E8E6 /* MPColorTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MPColorTools-dummy.m"; sourceTree = "<group>"; };
-		1AC36FD7CAC68900AFDF40576BF1BA7E /* SSZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.xcconfig; sourceTree = "<group>"; };
-		1DD547A49CE5960D97E70DD8BD437CE5 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = SSZipArchive/minizip/unzip.h; sourceTree = "<group>"; };
-		202880B2AB67E002DD88744F7EE409A2 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = SSZipArchive/minizip/ioapi.h; sourceTree = "<group>"; };
+		1162236B68E8B5CF0CAB8E678BA7AF84 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		118E72FD8587D7704A3FF7745F9C5C71 /* MPColorTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MPColorTools-dummy.m"; sourceTree = "<group>"; };
+		1DFA4C47B956BE9886FD458276DB4C2F /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		21CF22646C29F8BC57455FFDE0FC7E7E /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = SSZipArchive/minizip/zip.h; sourceTree = "<group>"; };
+		225DB5C7065B84E2C651FEE7F9D5EB06 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
 		29F6D287AF7EECC6CA67CECD2CCEEC72 /* Pods-Demo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Demo-resources.sh"; sourceTree = "<group>"; };
-		36780ABDE20CAA8A937BE0C8C79A4FE4 /* SSZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
+		2FEEE4452914D8DE2A5CB3784B93EB7D /* SSZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.xcconfig; sourceTree = "<group>"; };
+		30E4CA4800695D9DAC4A870A54E5F36E /* IIViewDeckController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IIViewDeckController.h; path = ViewDeck/IIViewDeckController.h; sourceTree = "<group>"; };
+		316EE4F14DEB786EAF9825E868D74348 /* SSZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSZipArchive-dummy.m"; sourceTree = "<group>"; };
+		348EF45C13A4C3AF1DDBECE8437AC729 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		37ECA5F82C19F792E4F5146A01C56514 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3806420E313C09FD8DBCE6DAF0EAF546 /* ViewDeck.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ViewDeck.xcconfig; sourceTree = "<group>"; };
 		3B9088532473007DACF3FD0F43B000EF /* Pods-DemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		3C279016B47E565AA48EA34C0474CEAF /* Pods-Demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Demo-frameworks.sh"; sourceTree = "<group>"; };
-		46F7553F3F55924C087DFD186071133F /* MPColorTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPColorTools.m; path = MPColorTools/MPColorTools.m; sourceTree = "<group>"; };
+		415FF4EA824EA8D8A2FEDF8B93064E90 /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = SSZipArchive/minizip/mztools.h; sourceTree = "<group>"; };
+		443BEC3C9D2E6FD5583891C27609FB79 /* SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
+		4D50CE05788A7DADBB2BCA926868F93B /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
 		4F4E6E3F08279C0471AF37FFB04DA07A /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		516C1491684F0588782FED3930A3E0B5 /* libMPColorTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMPColorTools.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		58807B500379F737E3707AA22CA6AAEE /* Pods-DemoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DemoTests-resources.sh"; sourceTree = "<group>"; };
-		59D215BA21D2E8BBA27DCBEA8B70C313 /* IIWrapController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IIWrapController.m; path = ViewDeck/IIWrapController.m; sourceTree = "<group>"; };
-		5C36A90D62CEFA3F26C3C03D2370453A /* MPColorTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPColorTools.h; path = MPColorTools/MPColorTools.h; sourceTree = "<group>"; };
-		6573347B0C837C29F6CBACD0ACFFB35F /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = SSZipArchive/minizip/unzip.c; sourceTree = "<group>"; };
-		79867E09DA9695D5C116AACA57894414 /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = SSZipArchive/minizip/mztools.h; sourceTree = "<group>"; };
+		5FC36DDB7733B6A8418BC35AD21A9662 /* MPColorTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MPColorTools.xcconfig; sourceTree = "<group>"; };
+		6892E0BAE00CF8AC2E6169F4BB0319EB /* MPColorTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPColorTools.h; path = MPColorTools/MPColorTools.h; sourceTree = "<group>"; };
+		70791180B0B0157E9892FCEB9285787F /* IISideController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IISideController.h; path = ViewDeck/IISideController.h; sourceTree = "<group>"; };
+		7960C0626E0E781D48FF22D8CD4AFBE4 /* IIWrapController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IIWrapController.h; path = ViewDeck/IIWrapController.h; sourceTree = "<group>"; };
 		7A2639E5B4E19ED3B527B65C7A55D8A7 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
-		7A86CF956E90C9F93A64A396F89CDCB0 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
-		7C528E8A759B0F8A06F6F10F4919F9F9 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zip.c; path = SSZipArchive/minizip/zip.c; sourceTree = "<group>"; };
+		7F52A0185E214E4C229A375F20DA4308 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = SSZipArchive/minizip/unzip.h; sourceTree = "<group>"; };
+		8225DB4F13E8C33739F4DD170C9D0210 /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mztools.c; path = SSZipArchive/minizip/mztools.c; sourceTree = "<group>"; };
 		8323C6FAEFEE9F3049088A4A2C43B5FE /* libPods-DemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		85A96B56CE66C167094936F4FA6A9646 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = SSZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
-		87E239C3CBC8205455BB17976A554C41 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		901932F53BBC9D79C40C5F8EC45887EE /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = SSZipArchive/minizip/crypt.h; sourceTree = "<group>"; };
+		867DBDCB2BFBFBC1D90BC59AB138286E /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zip.c; path = SSZipArchive/minizip/zip.c; sourceTree = "<group>"; };
+		8BA3AA801EAED59ADB6834CFCD89DC55 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = SSZipArchive/minizip/ioapi.h; sourceTree = "<group>"; };
 		9168FD33AEFA5ABF7D905651DB51EC12 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		98517BB2B88D335F5CA2A2E426F9F877 /* MPColorTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MPColorTools-prefix.pch"; sourceTree = "<group>"; };
 		9AB254A0FF9C0E1ECCCC3CA36E6AC016 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		9AD72E158981621134C962BD4EDA346A /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = SSZipArchive/minizip/crypt.h; sourceTree = "<group>"; };
 		A107FA33BB565AEBF6481931E4A566C0 /* Pods-DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		A171C22E5BEFAE34A5D24E4CC42034FE /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
-		A334D6B05D7DCD9F2E786A10D0D10F6B /* SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
+		A59C7C9F5955D385F56316CAB09DE844 /* IISideController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IISideController.m; path = ViewDeck/IISideController.m; sourceTree = "<group>"; };
 		A7A36DCBCD1CF8641BBEFFB4D80A4E60 /* Pods-DemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DemoTests-frameworks.sh"; sourceTree = "<group>"; };
-		B93C0EE297B1096D984A5BC516FCB5B8 /* IIViewDeckController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IIViewDeckController.h; path = ViewDeck/IIViewDeckController.h; sourceTree = "<group>"; };
+		B893A848E0174F9B2828B51A7A3635EA /* ViewDeck.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ViewDeck.xcconfig; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BF6F56109AE51A2B5BD6E6D2E1B7C4FF /* MPColorTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MPColorTools-prefix.pch"; sourceTree = "<group>"; };
 		C040EA9DAB83913B7F4867A803F65C87 /* Pods-DemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C0F04A24E09414097A28F7DA5DEE607B /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = SSZipArchive/minizip/zip.h; sourceTree = "<group>"; };
-		C241C96B78B323026A52E4DB6B33A492 /* IIViewDeckController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IIViewDeckController.m; path = ViewDeck/IIViewDeckController.m; sourceTree = "<group>"; };
-		C38E197CEAC4D3A96933E6AF7DA7DE19 /* IISideController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IISideController.h; path = ViewDeck/IISideController.h; sourceTree = "<group>"; };
-		C698626A07272862C8EB51E94D886BFD /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		C6EBF08BF1B8EF21D382747541EFE36E /* IISideController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IISideController.m; path = ViewDeck/IISideController.m; sourceTree = "<group>"; };
+		C35B996F144B47E0D71751F08B509696 /* IIWrapController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IIWrapController.m; path = ViewDeck/IIWrapController.m; sourceTree = "<group>"; };
 		C8CCF51F6C17727864F94EC906799013 /* Pods-DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA6F93637BB4BAF3CEA5E71ABA39076F /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = SSZipArchive/minizip/unzip.c; sourceTree = "<group>"; };
 		D0EC3E8E414D5869891EAA648005E569 /* libPods-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5F84371FEF56F87BFBEE0C526FCEE8A /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		D64AB8C0A1E815C07C6F968F76F7E559 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		D735A6A5AE9E3D9BEC06F0721F02D3CE /* IIWrapController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IIWrapController.h; path = ViewDeck/IIWrapController.h; sourceTree = "<group>"; };
+		D83D91AFABD956EBFDD3AD44BBE8E909 /* SSZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
+		DD7320C42AE309E72A2F50EC2FDADE66 /* ViewDeck-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ViewDeck-prefix.pch"; sourceTree = "<group>"; };
+		E15919D27A3FF528F3F9263882742DF4 /* IIViewDeckController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IIViewDeckController.m; path = ViewDeck/IIViewDeckController.m; sourceTree = "<group>"; };
+		E327C6C56DBC4A8D8CB1A39011A77934 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		E4CDD8E99BA6803CA8276771BEEB5661 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		E586D8FF4DDC81BA20A6C394E3AC7514 /* Pods-Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Demo-dummy.m"; sourceTree = "<group>"; };
-		EC2AD90790CB818A6758BF9388836250 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		ECF19D330BF0D735496D86F2B5D43496 /* MPColorTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MPColorTools.xcconfig; sourceTree = "<group>"; };
+		EC5A9ED75BDA4D2A508223F54CDEAFCB /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		ED321C78C8DC4F192932EF4C1FAE2131 /* ViewDeck-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ViewDeck-dummy.m"; sourceTree = "<group>"; };
 		ED7DF2627FA6D3324CC926901F9FE323 /* Pods-Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Demo-acknowledgements.plist"; sourceTree = "<group>"; };
 		EEAF707ECE17997BD3F97DC35BE48C78 /* Pods-DemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DemoTests-dummy.m"; sourceTree = "<group>"; };
-		FAD7DCDC22B849B44BB9F41E7F01D827 /* ViewDeck-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ViewDeck-prefix.pch"; sourceTree = "<group>"; };
-		FB71CC80D685ABB5802B1B22EDFAF97B /* ViewDeck-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ViewDeck-dummy.m"; sourceTree = "<group>"; };
+		F621883C23D731A5420BFCA8C7762ABF /* MPColorTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPColorTools.m; path = MPColorTools/MPColorTools.m; sourceTree = "<group>"; };
 		FD0B3BB3346F9D74032BA69E0D8B8264 /* Pods-Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FE313851FE325D397A3ED6EBD419653F /* libSSZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSSZipArchive.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEBFA0846D441B751CC9C2432AD35B9D /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = SSZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,14 +212,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		073499AADEE6AA0CA4933ED1E2B3470D /* MPColorTools */ = {
+		00BBC73CAEE71244C34AD0D363AF39C9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5C36A90D62CEFA3F26C3C03D2370453A /* MPColorTools.h */,
-				46F7553F3F55924C087DFD186071133F /* MPColorTools.m */,
-				4F84E077FB489441989FA48A19D13D46 /* Support Files */,
+				225DB5C7065B84E2C651FEE7F9D5EB06 /* MBProgressHUD.xcconfig */,
+				EC5A9ED75BDA4D2A508223F54CDEAFCB /* MBProgressHUD-dummy.m */,
+				1DFA4C47B956BE9886FD458276DB4C2F /* MBProgressHUD-prefix.pch */,
 			);
-			path = MPColorTools;
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		0499CA40AC80FE9BCEC620F1E70E18B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E327C6C56DBC4A8D8CB1A39011A77934 /* Fabric.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		05A07B3F0F06E7574D743ABA9CB5FEAA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B893A848E0174F9B2828B51A7A3635EA /* ViewDeck.xcconfig */,
+				ED321C78C8DC4F192932EF4C1FAE2131 /* ViewDeck-dummy.m */,
+				DD7320C42AE309E72A2F50EC2FDADE66 /* ViewDeck-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ViewDeck";
+			sourceTree = "<group>";
+		};
+		1042522B043D914B8EAA7A501400A713 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1162236B68E8B5CF0CAB8E678BA7AF84 /* Crashlytics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
@@ -243,36 +273,29 @@
 			path = "Target Support Files/Pods-DemoTests";
 			sourceTree = "<group>";
 		};
-		3BF50C2C2629F59858D4807D892BEA69 /* Support Files */ = {
+		2155347FBC20AF7B8095439E0BF8D68C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1AC36FD7CAC68900AFDF40576BF1BA7E /* SSZipArchive.xcconfig */,
-				06B1E7B65BAE04B859843E1688E0B195 /* SSZipArchive-dummy.m */,
-				A334D6B05D7DCD9F2E786A10D0D10F6B /* SSZipArchive-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SSZipArchive";
-			sourceTree = "<group>";
-		};
-		49434ACC6EBE51A94C3487BBDC40E8A3 /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				D5F84371FEF56F87BFBEE0C526FCEE8A /* MBProgressHUD.h */,
-				C698626A07272862C8EB51E94D886BFD /* MBProgressHUD.m */,
-				6330B6EA4B2BBC41C563F770D07574A3 /* Support Files */,
-			);
-			path = MBProgressHUD;
-			sourceTree = "<group>";
-		};
-		4F84E077FB489441989FA48A19D13D46 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				ECF19D330BF0D735496D86F2B5D43496 /* MPColorTools.xcconfig */,
-				17CF9DC99D13448ED7145B687299E8E6 /* MPColorTools-dummy.m */,
-				BF6F56109AE51A2B5BD6E6D2E1B7C4FF /* MPColorTools-prefix.pch */,
+				5FC36DDB7733B6A8418BC35AD21A9662 /* MPColorTools.xcconfig */,
+				118E72FD8587D7704A3FF7745F9C5C71 /* MPColorTools-dummy.m */,
+				98517BB2B88D335F5CA2A2E426F9F877 /* MPColorTools-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/MPColorTools";
+			sourceTree = "<group>";
+		};
+		2C7A53898BDA4FA1F9935AF265EA7AB4 /* ViewDeck */ = {
+			isa = PBXGroup;
+			children = (
+				70791180B0B0157E9892FCEB9285787F /* IISideController.h */,
+				A59C7C9F5955D385F56316CAB09DE844 /* IISideController.m */,
+				30E4CA4800695D9DAC4A870A54E5F36E /* IIViewDeckController.h */,
+				E15919D27A3FF528F3F9263882742DF4 /* IIViewDeckController.m */,
+				7960C0626E0E781D48FF22D8CD4AFBE4 /* IIWrapController.h */,
+				C35B996F144B47E0D71751F08B509696 /* IIWrapController.m */,
+				05A07B3F0F06E7574D743ABA9CB5FEAA /* Support Files */,
+			);
+			path = ViewDeck;
 			sourceTree = "<group>";
 		};
 		4FF06180366D6FBF2F90BDE30AE60D67 /* Pods-Demo */ = {
@@ -290,26 +313,36 @@
 			path = "Target Support Files/Pods-Demo";
 			sourceTree = "<group>";
 		};
-		54346146BFC6EE0C427A254205B550F1 /* Support Files */ = {
+		56B257FB25884A4F9DE40B0DF042A49C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3806420E313C09FD8DBCE6DAF0EAF546 /* ViewDeck.xcconfig */,
-				FB71CC80D685ABB5802B1B22EDFAF97B /* ViewDeck-dummy.m */,
-				FAD7DCDC22B849B44BB9F41E7F01D827 /* ViewDeck-prefix.pch */,
+				E8C4ECC3F7F76709BE8E6DE50CFCF144 /* Crashlytics */,
+				BF0CC6E9D790E66661C12423A386C414 /* Fabric */,
+				E6A5E3BF4A7460CEC2DD05536D245803 /* MBProgressHUD */,
+				CDB565688EA26466FE9E710268C018CD /* MPColorTools */,
+				E89AD121456E67E82D62226DF8E3EC26 /* SSZipArchive */,
+				2C7A53898BDA4FA1F9935AF265EA7AB4 /* ViewDeck */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/ViewDeck";
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		6330B6EA4B2BBC41C563F770D07574A3 /* Support Files */ = {
+		67F876D19B88E1D91BE599A785AA4755 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				7A86CF956E90C9F93A64A396F89CDCB0 /* MBProgressHUD.xcconfig */,
-				87E239C3CBC8205455BB17976A554C41 /* MBProgressHUD-dummy.m */,
-				EC2AD90790CB818A6758BF9388836250 /* MBProgressHUD-prefix.pch */,
+				0499CA40AC80FE9BCEC620F1E70E18B0 /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		6E8C7FAF6303816280665272073291DD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FEEE4452914D8DE2A5CB3784B93EB7D /* SSZipArchive.xcconfig */,
+				316EE4F14DEB786EAF9825E868D74348 /* SSZipArchive-dummy.m */,
+				443BEC3C9D2E6FD5583891C27609FB79 /* SSZipArchive-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/MBProgressHUD";
+			path = "../Target Support Files/SSZipArchive";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -317,7 +350,7 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				DEA8F66FBD33C54796BF949FC483FA7F /* Pods */,
+				56B257FB25884A4F9DE40B0DF042A49C /* Pods */,
 				B139F2A5CF22CAAD9359A6F70793EE40 /* Products */,
 				DF1AF0B724DE9E5E561E34D2E367B861 /* Targets Support Files */,
 			);
@@ -336,37 +369,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D68E8877DD330DEA78DEF4650F186596 /* SSZipArchive */ = {
+		BF0CC6E9D790E66661C12423A386C414 /* Fabric */ = {
 			isa = PBXGroup;
 			children = (
-				901932F53BBC9D79C40C5F8EC45887EE /* crypt.h */,
-				85A96B56CE66C167094936F4FA6A9646 /* ioapi.c */,
-				202880B2AB67E002DD88744F7EE409A2 /* ioapi.h */,
-				079FEAB109355F61270895B2075C61A2 /* mztools.c */,
-				79867E09DA9695D5C116AACA57894414 /* mztools.h */,
-				36780ABDE20CAA8A937BE0C8C79A4FE4 /* SSZipArchive.h */,
-				A171C22E5BEFAE34A5D24E4CC42034FE /* SSZipArchive.m */,
-				6573347B0C837C29F6CBACD0ACFFB35F /* unzip.c */,
-				1DD547A49CE5960D97E70DD8BD437CE5 /* unzip.h */,
-				7C528E8A759B0F8A06F6F10F4919F9F9 /* zip.c */,
-				C0F04A24E09414097A28F7DA5DEE607B /* zip.h */,
-				3BF50C2C2629F59858D4807D892BEA69 /* Support Files */,
+				67F876D19B88E1D91BE599A785AA4755 /* Base */,
 			);
-			path = SSZipArchive;
+			path = Fabric;
 			sourceTree = "<group>";
 		};
-		D77EAF1EE362CCB215FE2F88C5133C33 /* ViewDeck */ = {
+		CDB565688EA26466FE9E710268C018CD /* MPColorTools */ = {
 			isa = PBXGroup;
 			children = (
-				C38E197CEAC4D3A96933E6AF7DA7DE19 /* IISideController.h */,
-				C6EBF08BF1B8EF21D382747541EFE36E /* IISideController.m */,
-				B93C0EE297B1096D984A5BC516FCB5B8 /* IIViewDeckController.h */,
-				C241C96B78B323026A52E4DB6B33A492 /* IIViewDeckController.m */,
-				D735A6A5AE9E3D9BEC06F0721F02D3CE /* IIWrapController.h */,
-				59D215BA21D2E8BBA27DCBEA8B70C313 /* IIWrapController.m */,
-				54346146BFC6EE0C427A254205B550F1 /* Support Files */,
+				6892E0BAE00CF8AC2E6169F4BB0319EB /* MPColorTools.h */,
+				F621883C23D731A5420BFCA8C7762ABF /* MPColorTools.m */,
+				2155347FBC20AF7B8095439E0BF8D68C /* Support Files */,
 			);
-			path = ViewDeck;
+			path = MPColorTools;
 			sourceTree = "<group>";
 		};
 		D89D42E51D160380C262AB055B889685 /* iOS */ = {
@@ -379,17 +397,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		DEA8F66FBD33C54796BF949FC483FA7F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				49434ACC6EBE51A94C3487BBDC40E8A3 /* MBProgressHUD */,
-				073499AADEE6AA0CA4933ED1E2B3470D /* MPColorTools */,
-				D68E8877DD330DEA78DEF4650F186596 /* SSZipArchive */,
-				D77EAF1EE362CCB215FE2F88C5133C33 /* ViewDeck */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		DF1AF0B724DE9E5E561E34D2E367B861 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -397,6 +404,43 @@
 				194008AE1E18EFE2D162C693C30E20B3 /* Pods-DemoTests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E6A5E3BF4A7460CEC2DD05536D245803 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				348EF45C13A4C3AF1DDBECE8437AC729 /* MBProgressHUD.h */,
+				E4CDD8E99BA6803CA8276771BEEB5661 /* MBProgressHUD.m */,
+				00BBC73CAEE71244C34AD0D363AF39C9 /* Support Files */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		E89AD121456E67E82D62226DF8E3EC26 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				9AD72E158981621134C962BD4EDA346A /* crypt.h */,
+				FEBFA0846D441B751CC9C2432AD35B9D /* ioapi.c */,
+				8BA3AA801EAED59ADB6834CFCD89DC55 /* ioapi.h */,
+				8225DB4F13E8C33739F4DD170C9D0210 /* mztools.c */,
+				415FF4EA824EA8D8A2FEDF8B93064E90 /* mztools.h */,
+				D83D91AFABD956EBFDD3AD44BBE8E909 /* SSZipArchive.h */,
+				4D50CE05788A7DADBB2BCA926868F93B /* SSZipArchive.m */,
+				CA6F93637BB4BAF3CEA5E71ABA39076F /* unzip.c */,
+				7F52A0185E214E4C229A375F20DA4308 /* unzip.h */,
+				867DBDCB2BFBFBC1D90BC59AB138286E /* zip.c */,
+				21CF22646C29F8BC57455FFDE0FC7E7E /* zip.h */,
+				6E8C7FAF6303816280665272073291DD /* Support Files */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		E8C4ECC3F7F76709BE8E6DE50CFCF144 /* Crashlytics */ = {
+			isa = PBXGroup;
+			children = (
+				1042522B043D914B8EAA7A501400A713 /* Frameworks */,
+			);
+			path = Crashlytics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -725,7 +769,7 @@
 		};
 		0B2C8F9109BD73A5F2A99CBF98AA3C22 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3806420E313C09FD8DBCE6DAF0EAF546 /* ViewDeck.xcconfig */;
+			baseConfigurationReference = B893A848E0174F9B2828B51A7A3635EA /* ViewDeck.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/ViewDeck/ViewDeck-prefix.pch";
@@ -760,7 +804,7 @@
 		};
 		31BD97B5330E343B37217C4A2C52FF79 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ECF19D330BF0D735496D86F2B5D43496 /* MPColorTools.xcconfig */;
+			baseConfigurationReference = 5FC36DDB7733B6A8418BC35AD21A9662 /* MPColorTools.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MPColorTools/MPColorTools-prefix.pch";
@@ -778,7 +822,7 @@
 		};
 		31EFBAE9035FA4A4D9B202F1DA7ECDA9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AC36FD7CAC68900AFDF40576BF1BA7E /* SSZipArchive.xcconfig */;
+			baseConfigurationReference = 2FEEE4452914D8DE2A5CB3784B93EB7D /* SSZipArchive.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
@@ -830,7 +874,7 @@
 		};
 		50EDAB5E8C7910E6ACEDCBC583552BBC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AC36FD7CAC68900AFDF40576BF1BA7E /* SSZipArchive.xcconfig */;
+			baseConfigurationReference = 2FEEE4452914D8DE2A5CB3784B93EB7D /* SSZipArchive.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
@@ -848,7 +892,7 @@
 		};
 		9C23A42430A7229776AB4A7583C3E318 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3806420E313C09FD8DBCE6DAF0EAF546 /* ViewDeck.xcconfig */;
+			baseConfigurationReference = B893A848E0174F9B2828B51A7A3635EA /* ViewDeck.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/ViewDeck/ViewDeck-prefix.pch";
@@ -905,7 +949,7 @@
 		};
 		C5AFFFCB54FD9036E7BC9BA54ADAAF30 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A86CF956E90C9F93A64A396F89CDCB0 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = 225DB5C7065B84E2C651FEE7F9D5EB06 /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
@@ -923,7 +967,7 @@
 		};
 		E7B8141DB24F5AA0D1F847AFEC0DB018 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A86CF956E90C9F93A64A396F89CDCB0 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = 225DB5C7065B84E2C651FEE7F9D5EB06 /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
@@ -958,7 +1002,7 @@
 		};
 		FBC8900B3D14C2C06FE4BC1B2F0CE44E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ECF19D330BF0D735496D86F2B5D43496 /* MPColorTools.xcconfig */;
+			baseConfigurationReference = 5FC36DDB7733B6A8418BC35AD21A9662 /* MPColorTools.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MPColorTools/MPColorTools-prefix.pch";

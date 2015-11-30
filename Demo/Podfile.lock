@@ -1,16 +1,25 @@
 PODS:
+  - Crashlytics (3.4.0):
+    - Fabric (~> 1.6.0)
+  - Fabric (1.6.0):
+    - Fabric/Base (= 1.6.0)
+  - Fabric/Base (1.6.0)
   - MBProgressHUD (0.9)
   - MPColorTools (1.6.1)
   - SSZipArchive (0.3.3)
   - ViewDeck (2.2.11)
 
 DEPENDENCIES:
+  - Crashlytics
+  - Fabric
   - MBProgressHUD (~> 0.9)
   - MPColorTools (~> 1.6)
   - SSZipArchive
   - ViewDeck (~> 2.2.11)
 
 SPEC CHECKSUMS:
+  Crashlytics: 1ee87895c37472eb3f01f409ea1654a464d2f8d4
+  Fabric: d737eda3a26ac940a5430230eedb35f16b226131
   MBProgressHUD: d8e7ea388dc1549a42e0d219067cf5f2c898fb66
   MPColorTools: a5d2a09fc44750aea0366f666aa52c80565c0764
   SSZipArchive: 2cf2a6d3ac9f03252b7d96f93728b9b983be9afb

@@ -5,6 +5,8 @@ platform :ios, '7.0'
 target "Demo" do
 	podspec :path => "../Tml.podspec"
     
+    pod 'Fabric'
+	pod 'Crashlytics'
     pod 'ViewDeck', '~> 2.2.11'
     pod 'SSZipArchive'
 end

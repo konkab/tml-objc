@@ -119,6 +119,7 @@
     NSString *host = [app.tools objectForKey: @"host"];
     if(!host) host = @"https://translation-center.translationexchange.com";
     return host;
+//    return @"http://localhost:3013";
 }
 
 - (void) viewDidLoad {
@@ -135,7 +136,9 @@
         url = [NSString stringWithFormat:@"%@/mobile?locale=%@&key=%@", [self host], lang.locale, app.key];
     }
     
-    TMLDebug(@"url %@", url);
+    // url = @"http://localhost:3013/mobile-index.html#/phrases?locale=ru";
+    
+    // TMLDebug(@"url %@", url);
     
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
     

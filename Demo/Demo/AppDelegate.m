@@ -11,11 +11,15 @@
 #import "IIViewDeckController.h"
 #import "MenuViewController.h"
 #import "TMLPostOffice.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [Fabric with:@[[Crashlytics class]]];
+
     [TML sharedInstanceWithToken:@"8641229aae46c7d39e78657e9da0c86c80f432c21e4e4fb5bf0934673499be7a"];
 
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
@@ -32,6 +36,8 @@
         UIRemoteNotificationType myTypes = UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound;
         [[UIApplication sharedApplication] registerForRemoteNotificationTypes:myTypes];
     }
+
+//    [[Crashlytics sharedInstance] crash];
 
     return YES;
 }

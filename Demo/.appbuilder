@@ -1,0 +1,17 @@
+scm:
+  enabled:            false
+  commit_changes:     false
+  tag_build:          false
+test:
+  enabled:            false
+build:
+  type:               "ios"
+  developer_name:     "MobTouch Inc"
+  increment_bundle:   true
+  architecture:       "armv7"
+  configuration:      "Release"
+  sdk:                "iphoneos"
+deploy:
+  translation_exchange:
+    enabled:  true
+    access_token: "a70cebd0c3bb48f909813b425d150cee9805dc184361d7564093d82ccf780701"
