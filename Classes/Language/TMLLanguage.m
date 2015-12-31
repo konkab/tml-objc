@@ -242,28 +242,24 @@
         source = (TMLSource *) [self.application sourceForKey:sourceKey];
     }
     
-    return [self translateKey:translationKey
-                       source:source
-                       tokens:tokens
-                      options:options];
+    id result = [self translateKey:translationKey
+                            source:source
+                            tokens:tokens
+                           options:options];
+    
+    NSMutableDictionary *info = [result tmlInfo];
+    info[TMLRegistryTranslationKeyName] = translationKey;
+    info[TMLRegistryTokensKeyName] = tokens;
+    info[TMLRegistryOptionsKeyName] = options;
+    
+    return result;
 }
 
 - (id) translateKey:(TMLTranslationKey *)translationKey
              source:(TMLSource *)source
              tokens:(NSDictionary *)tokens
             options:(NSDictionary *)options
-{
-    id sender = options[TMLSenderOptionName];
-    NSString *restorationKey = options[TMLRestorationKeyOptionName];
-    if (sender != nil && restorationKey.length > 0) {
-        NSMutableDictionary *restorationOptions = [options mutableCopy];
-        [restorationOptions removeObjectForKey:TMLSenderOptionName];
-        [sender registerTMLTranslationKey:translationKey
-                                   tokens:tokens
-                                  options:[restorationOptions copy]
-                           restorationKey:restorationKey];
-    }
-    
+{   
     NSMutableDictionary *ourTokens = [NSMutableDictionary dictionary];
     if (tokens != nil) {
         [ourTokens addEntriesFromDictionary:tokens];

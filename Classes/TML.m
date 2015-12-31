@@ -207,6 +207,7 @@ id TMLLocalizeDate(NSDictionary *options, NSDate *date, NSString *format, ...) {
     UIGestureRecognizer *_translationActivationGestureRecognizer;
     UIGestureRecognizer *_inlineTranslationGestureRecognizer;
     TMLTranslationActivationView *_translationActivationView;
+    NSHashTable *_localizationOwners;
 }
 @property(strong, nonatomic) TMLConfiguration *configuration;
 @property(strong, nonatomic) TMLAPIClient *apiClient;
@@ -261,6 +262,7 @@ id TMLLocalizeDate(NSDictionary *options, NSDate *date, NSString *format, ...) {
 
 - (instancetype) initWithConfiguration:(TMLConfiguration *)configuration {
     if (self == [super init]) {
+        _localizationOwners = [NSHashTable weakObjectsHashTable];
         self.configuration = configuration;
     }
     return self;
@@ -1066,7 +1068,7 @@ shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRec
                 localizablePaths = [view tmlLocalizableKeyPaths];
                 if (localizablePaths.count > 0) {
                     hitView = view;
-//                    *stop = YES;
+                    *stop = YES;
                 }
             }
         }];
@@ -1123,9 +1125,6 @@ shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRec
         }
         
         if ([[TML sharedInstance] isTranslationKeyRegistered:translationKey.key] == YES) {
-            if ([view isTMLTranslationKeyRegisteredForKeyPath:keyPath] == NO) {
-                [view registerTMLTranslationKey:translationKey tokens:tokens options:nil restorationKey:keyPath];
-            }
             [self presentTranslatorViewControllerWithTranslationKey:key];
         }
         else {
@@ -1143,7 +1142,6 @@ shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRec
                 [self.apiClient registerTranslationKeysBySourceKey:payload completionBlock:^(BOOL success, NSError *error) {
                     if (success == YES) {
                         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.33 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                            [view registerTMLTranslationKey:translationKey tokens:tokens options:nil restorationKey:keyPath];
                             [self presentTranslatorViewControllerWithTranslationKey:key];
                         });
                     }
@@ -1160,12 +1158,6 @@ shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRec
         }
     }
     else {
-        if (view.tmlRegistry.count == 0) {
-            [view generateTMLLocalizationRegistry];
-        }
-        if (view.tmlRegistry.count == 0) {
-            [view localizeWithTML];
-        }
         [self presentTranslatorViewControllerWithTranslationKey:key];
     }
 }
@@ -1460,6 +1452,9 @@ shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRec
         [toRestore addObject:firstResponder];
     }
     
+    NSArray *owners = [_localizationOwners allObjects];
+    [toRestore addObjectsFromArray:owners];
+    
     for (id obj in toRestore) {
         if (obj == self) {
             continue;
@@ -1497,6 +1492,11 @@ shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRec
     [[TMLBundleManager defaultManager] removeAllBundles];
     [self setCurrentBundle:nil];
     _lastBundleUpdateDate = nil;
+}
+
+#pragma mark -
+- (void)registerLocalizedStringOwner:(id)owner {
+    [_localizationOwners addObject:owner];
 }
 
 @end

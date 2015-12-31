@@ -315,6 +315,9 @@
 
 + (void)presentTranslatorViewControllerWithTranslationKey:(NSString *)translationKey;
 
+#pragma mark - 
+- (void)registerLocalizedStringOwner:(id)owner;
+
 @end
 
 

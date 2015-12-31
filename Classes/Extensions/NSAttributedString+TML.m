@@ -12,6 +12,7 @@
 NSString * const TMLAttributedStringStylePrefix = @"style";
 
 @implementation NSAttributedString (TML)
+
 - (NSString *)tmlAttributedString:(NSDictionary **)tokens {
     return [self tmlAttributedString:tokens implicit:YES];
 }

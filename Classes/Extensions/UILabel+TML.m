@@ -32,11 +32,34 @@
 #import "NSObject+TML.h"
 #import "NSString+TML.h"
 #import "TML.h"
+#import <objc/runtime.h>
 
 @interface UILabel()
 @end
 
 @implementation UILabel (TML)
+
++ (void)load {
+    Method original = class_getInstanceMethod(self, @selector(setText:));
+    Method ours = class_getInstanceMethod(self, @selector(tmlSetText:));
+    method_exchangeImplementations(original, ours);
+    
+    original = class_getInstanceMethod(self, @selector(setAttributedText:));
+    ours = class_getInstanceMethod(self, @selector(tmlSetAttributedText:));
+    method_exchangeImplementations(original, ours);
+}
+
+- (void)tmlSetText:(NSString *)text {
+    [self willChangeValueForKey:@"text"];
+    [self tmlSetText:text];
+    [self didChangeValueForKey:@"text"];
+}
+
+- (void)tmlSetAttributedText:(NSAttributedString *)attributedText {
+    [self willChangeValueForKey:@"attributedText"];
+    [self tmlSetAttributedText:attributedText];
+    [self didChangeValueForKey:@"attributedText"];
+}
 
 - (NSSet *)tmlLocalizableKeyPaths {
     NSMutableSet *paths = [[super tmlLocalizableKeyPaths] mutableCopy];

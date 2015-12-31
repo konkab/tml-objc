@@ -99,4 +99,14 @@
     NSLog(@"A button was clicked: %@.", button);
 }
 
+#pragma mark - TML
+- (void)restoreTMLLocalizations {
+    [super restoreTMLLocalizations];
+    [self configureSystemTextButton];
+    [self configureSystemContactAddButton];
+    [self configureSystemDetailDisclosureButton];
+    [self configureImageButton];
+    [self configureAttributedTextSystemButton];
+}
+
 @end

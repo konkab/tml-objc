@@ -32,26 +32,63 @@
 #import "NSObject+TML.h"
 #import "NSString+TML.h"
 #import "TML.h"
-#import "UIButton+TML.h"
-#import "TMLTranslationKey.h"
 #import "TMLBundle.h"
+#import "TMLLanguage.h"
+#import "TMLTranslationKey.h"
+#import "UIButton+TML.h"
 
 @implementation UIButton (TML)
 
+- (NSArray *)tmlLocalizableStates {
+    static NSArray *states;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        states = @[
+                   @(UIControlStateNormal),
+                   @(UIControlStateHighlighted),
+                   @(UIControlStateDisabled),
+                   @(UIControlStateSelected),
+                   @(UIControlStateApplication)
+                   ];
+    });
+    return states;
+}
+
 - (void)restoreTMLLocalizations {
     [super restoreTMLLocalizations];
-    if (self.titleLabel != nil) {
-        UILabel *titleLabel = self.titleLabel;
-        if (titleLabel.hidden == YES) {
-            return;
-        }
-        NSDictionary *registry = [titleLabel tmlRegistry];
-        for (NSString *keyPath in registry) {
-            if ([keyPath isEqualToString:@"attributedText"] == YES) {
-                [self setAttributedTitle:[titleLabel attributedText] forState:[self state]];
+    UILabel *titleLabel = self.titleLabel;
+    if (titleLabel != nil && titleLabel.hidden == NO) {
+        NSArray *states = [self tmlLocalizableStates];
+        for (NSNumber *stateNumber in states) {
+            UIControlState state = [stateNumber integerValue];
+            id currentValue = [self attributedTitleForState:state];
+            if (currentValue == nil) {
+                currentValue = [self titleForState:state];
             }
-            else if ([keyPath isEqualToString:@"text"] == YES) {
-                [self setTitle:[titleLabel text] forState:[self state]];
+            NSDictionary *tmlInfo = [currentValue tmlInfo];
+            if (tmlInfo.count == 0) {
+                continue;
+            }
+            TMLTranslationKey *translationKey = tmlInfo[TMLRegistryTranslationKeyName];
+            NSDictionary *tokens = tmlInfo[TMLRegistryTokensKeyName];
+            NSDictionary *options = tmlInfo[TMLRegistryOptionsKeyName];
+            id result = [[TML currentLanguage] translate:translationKey.label
+                                             description:translationKey.keyDescription
+                                                  tokens:tokens
+                                                 options:options];
+            if (result == nil) {
+                result = [[TML defaultLanguage] translate:translationKey.label
+                                              description:translationKey.keyDescription
+                                                   tokens:tokens
+                                                  options:options];
+            }
+            if (result != nil) {
+                if ([result isKindOfClass:[NSAttributedString class]] == YES) {
+                    [self setAttributedTitle:result forState:state];
+                }
+                else {
+                    [self setTitle:result forState:state];
+                }
             }
         }
     }
@@ -59,13 +96,7 @@
 
 - (void)localizeWithTML {
     [super localizeWithTML];
-    NSArray *states = @[
-        @(UIControlStateNormal),
-        @(UIControlStateHighlighted),
-        @(UIControlStateDisabled),
-        @(UIControlStateSelected),
-        @(UIControlStateApplication)
-    ];
+    NSArray *states = [self tmlLocalizableStates];
     
     for (NSNumber *state in states) {
         UIControlState controlState = [state integerValue];
@@ -88,19 +119,6 @@
                 NSString *localizedString = TMLLocalizedString(tmlString);
                 [self setTitle:localizedString forState:[state integerValue]];
             }
-        }
-        
-        TMLTranslationKey *translationKey = nil;
-        UILabel *titleLabel = self.titleLabel;
-        if (titleLabel != nil && tmlString != nil) {
-            translationKey = [[TMLTranslationKey alloc] init];
-            translationKey.label = tmlString;
-            translationKey.locale = [TML defaultLocale];
-            NSString *keyPath = (attributedTitle.length > 0) ? @"attributedText" : @"text";
-            [titleLabel registerTMLTranslationKey:translationKey
-                                           tokens:tokens
-                                          options:nil
-                                   restorationKey:keyPath];
         }
     }
 }
