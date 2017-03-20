@@ -6,6 +6,8 @@
 //  Copyright © 2015 Translation Exchange. All rights reserved.
 //
 
+#if TARGET_OS_IOS || TARGET_OS_TV
+
 #ifdef __IPHONE_9_0
 #import "UIApplicationShortcutItem+TML.h"
 #import "NSObject+TML.h"
@@ -22,4 +24,6 @@
 }
 
 @end
+#endif
+
 #endif

@@ -28,9 +28,12 @@
  *  THE SOFTWARE.
  */
 
+#if TARGET_OS_IOS || TARGET_OS_TV
 
 #import "TMLViewController.h"
 
 @implementation TMLViewController
 
 @end
+
+#endif

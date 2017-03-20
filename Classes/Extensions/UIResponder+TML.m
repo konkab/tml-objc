@@ -6,8 +6,12 @@
 //  Copyright © 2015 Translation Exchange. All rights reserved.
 //
 
+#if TARGET_OS_IOS || TARGET_OS_TV
+
 #import "UIResponder+TML.h"
 
 @implementation UIResponder (TML)
 
 @end
+
+#endif

@@ -28,6 +28,7 @@
  *  THE SOFTWARE.
  */
 
+#if TARGET_OS_IOS || TARGET_OS_TV
 
 #import "MBProgressHUD.h"
 #import "TML.h"
@@ -184,3 +185,5 @@
 }
 
 @end
+
+#endif

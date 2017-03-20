@@ -6,6 +6,8 @@
 //  Copyright © 2016 Translation Exchange. All rights reserved.
 //
 
+#if TARGET_OS_IOS || TARGET_OS_TV
+
 #import "TML.h"
 #import "TMLAlertController.h"
 #import "UIView+TML.h"
@@ -769,3 +771,5 @@ UICollectionViewDelegateFlowLayout
 
 
 @end
+
+#endif

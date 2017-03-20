@@ -28,6 +28,8 @@
  *  THE SOFTWARE.
  */
 
+#if TARGET_OS_IOS || TARGET_OS_TV
+
 #import "NSObject+TML.h"
 #import "TML.h"
 #import "UINavigationItem+TML.h"
@@ -44,3 +46,5 @@
 }
 
 @end
+
+#endif

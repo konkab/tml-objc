@@ -28,6 +28,8 @@
  *  THE SOFTWARE.
  */
 
+#if TARGET_OS_IOS || TARGET_OS_TV
+
 #import "NSAttributedString+TML.h"
 #import "NSObject+TML.h"
 #import "NSString+TML.h"
@@ -58,3 +60,5 @@
 }
 
 @end
+
+#endif

@@ -6,6 +6,8 @@
 //  Copyright © 2015 Translation Exchange. All rights reserved.
 //
 
+#if TARGET_OS_IOS || TARGET_OS_TV
+
 #import "NSObject+TML.h"
 #import "TML.h"
 #import "UIRefreshControl+TML.h"
@@ -22,3 +24,5 @@
 }
 
 @end
+
+#endif

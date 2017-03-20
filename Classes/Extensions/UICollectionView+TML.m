@@ -6,6 +6,8 @@
 //  Copyright © 2016 Translation Exchange. All rights reserved.
 //
 
+#if TARGET_OS_IOS || TARGET_OS_TV
+
 #import "NSObject+TML.h"
 #import "TML.h"
 #import "TMLConfiguration.h"
@@ -21,3 +23,5 @@
 }
 
 @end
+
+#endif

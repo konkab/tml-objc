@@ -6,6 +6,8 @@
 //  Copyright © 2015 Translation Exchange. All rights reserved.
 //
 
+#if TARGET_OS_IOS || TARGET_OS_TV
+
 #import "UITableViewRowAction+TML.h"
 #import "NSObject+TML.h"
 
@@ -21,3 +23,5 @@
 }
 
 @end
+
+#endif

@@ -6,6 +6,8 @@
 //  Copyright © 2016 Translation Exchange. All rights reserved.
 //
 
+#if TARGET_OS_IOS || TARGET_OS_TV
+
 #import "NSObject+TMLJSON.h"
 #import "TML.h"
 #import "TMLAPIClient.h"
@@ -148,3 +150,5 @@ NSString * const TMLAuthorizationErrorDomain = @"TMLAuthorizationErrorDomain";
 }
 
 @end
+
+#endif
