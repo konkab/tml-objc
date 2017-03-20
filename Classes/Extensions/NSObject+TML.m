@@ -248,7 +248,12 @@ void ensureArrayIndex(NSMutableArray *array, NSInteger index) {
 
 - (void)updateReusableTMLStrings {
     // TODO: this should probably be getting set elsewhere
+    
+#if TARGET_OS_IOS || TARGET_OS_TV
+    
     self.accessibilityLanguage = TMLCurrentLocale();
+    
+#endif
     
     NSMutableDictionary *registry = [self tmlRegistry][TMLReusableLocalizedStringsRegistryKey];
     for (NSString *reuseIdentifier in registry) {

@@ -28,7 +28,14 @@
  *  THE SOFTWARE.
  */
 
+#import <TargetConditionals.h>
+
+#if TARGET_OS_IOS || TARGET_OS_TV
+
 #import "MPColorTools.h"
+
+#endif
+
 #import "TML.h"
 #import "TMLAttributedDecorationTokenizer.h"
 #import "TMLConfiguration.h"
@@ -251,6 +258,8 @@
  * @{@"font": @"Arial, 8"}
  */
 
+#if TARGET_OS_IOS || TARGET_OS_TV
+
 + (UIFont *) fontFromData: (NSObject *)data {
     if ([data isKindOfClass: UIFont.class]) {
         return (UIFont *) data;
@@ -285,8 +294,46 @@
     return nil;
 }
 
+#elif TARGET_OS_OSX
+
++ (NSFont *) fontFromData: (NSObject *)data {
+    if ([data isKindOfClass: NSFont.class]) {
+        return (NSFont *) data;
+    }
+    
+    if ([data isKindOfClass: NSDictionary.class]) {
+        NSDictionary *settings = (NSDictionary *) data;
+        NSString *fontName = [settings objectForKey:@"name"];
+        NSNumber *fontSize = [settings objectForKey:@"size"];
+        
+        if ([fontName isEqualToString:@"system"]) {
+            if ([[settings objectForKey:@"type"] isEqualToString:@"bold"]) {
+                return [NSFont boldSystemFontOfSize:[fontSize floatValue]];
+            }
+            if ([[settings objectForKey:@"type"] isEqualToString:@"italic"]) {
+                return [NSFont systemFontOfSize:[fontSize floatValue]];
+            }
+            return [NSFont systemFontOfSize:[fontSize floatValue]];
+        }
+        
+        return [NSFont fontWithName:fontName size:[fontSize floatValue]];
+    }
+    
+    if ([data isKindOfClass: NSString.class]) {
+        NSArray *elements = [((NSString *) data) componentsSeparatedByString:@","];
+        if ([elements count] < 2) return nil;
+        NSString *fontName = [elements objectAtIndex:0];
+        float fontSize = [[elements objectAtIndex:1] floatValue];
+        return [NSFont fontWithName:fontName size:fontSize];
+    }
+    
+    return nil;
+}
+
+#endif
+
 + (void)addFont:(NSObject *)data toRange: (NSRange) range inAttributedString: (NSMutableAttributedString *) attributedString {
-    UIFont *font = [self fontFromData:data];
+    NSObject *font = [self fontFromData:data];
     if (font == nil) return;
     [attributedString addAttribute: NSFontAttributeName value:font range:range];
 }
@@ -296,6 +343,9 @@
  * @{@"color": @{@"red": @111, @"green": @8 ...}}
  * @{@"color": @"fbc"}
  */
+
+#if TARGET_OS_IOS || TARGET_OS_TV
+
 + (UIColor *) colorFromData: (NSObject *)data {
     if ([data isKindOfClass: UIColor.class]) {
         return (UIColor *) data;
@@ -335,6 +385,14 @@
     
     return nil;
 }
+
+#elif TARGET_OS_OSX
+
++ (NSColor *) colorFromData: (NSObject *)data {
+    return nil;
+}
+
+#endif
 
 + (void)addColor:(NSObject *)data toRange: (NSRange) range inAttributedString: (NSMutableAttributedString *) attributedString {
     [attributedString addAttribute: NSForegroundColorAttributeName value:[self colorFromData:data] range:range];

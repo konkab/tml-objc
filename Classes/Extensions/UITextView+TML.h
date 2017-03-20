@@ -28,8 +28,12 @@
  *  THE SOFTWARE.
  */
 
+#if TARGET_OS_IOS || TARGET_OS_TV
+
 #import <UIKit/UIKit.h>
 
 @interface UITextView (TML)
 
 @end
+
+#endif

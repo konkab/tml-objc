@@ -175,6 +175,8 @@ id TMLLocalizeDate(NSDictionary *options, NSDate *date, NSString *format, ...) {
 
 #pragma mark - TML
 
+#if TARGET_OS_IOS || TARGET_OS_TV
+
 @interface TML()<UIGestureRecognizerDelegate, TMLAuthorizationViewControllerDelegate> {
     BOOL _observingNotifications;
     BOOL _checkingForBundleUpdate;
@@ -185,6 +187,19 @@ id TMLLocalizeDate(NSDictionary *options, NSDate *date, NSString *format, ...) {
     NSHashTable *_objectsWithLocalizedStrings;
     NSHashTable *_objectsWithReusableLocalizedStrings;
 }
+
+#elif TARGET_OS_OSX
+
+@interface TML() {
+    BOOL _observingNotifications;
+    BOOL _checkingForBundleUpdate;
+    NSDate *_lastBundleUpdateDate;
+    NSHashTable *_objectsWithLocalizedStrings;
+    NSHashTable *_objectsWithReusableLocalizedStrings;
+}
+
+#endif
+
 @property(strong, nonatomic) TMLConfiguration *configuration;
 @property(strong, nonatomic) TMLAPIClient *apiClient;
 @property(nonatomic, readwrite) TMLBundle *currentBundle;
@@ -360,6 +375,9 @@ id TMLLocalizeDate(NSDictionary *options, NSDate *date, NSString *format, ...) {
     if (_observingNotifications == YES) {
         return;
     }
+    
+#if TARGET_OS_IOS || TARGET_OS_TV
+    
     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
     [notificationCenter addObserver:self
                            selector:@selector(applicationDidBecomeActive:)
@@ -372,6 +390,9 @@ id TMLLocalizeDate(NSDictionary *options, NSDate *date, NSString *format, ...) {
     [notificationCenter addObserver:self selector:@selector(bundleSyncDidFinish:)
                                name:TMLDidFinishSyncNotification
                              object:nil];
+    
+#endif
+    
     _observingNotifications = YES;
 }
 
@@ -408,6 +429,8 @@ id TMLLocalizeDate(NSDictionary *options, NSDate *date, NSString *format, ...) {
         [self attemptToUpdateBundle];
     }
     
+#if TARGET_OS_IOS || TARGET_OS_TV
+    
     [self setupTranslationActivationGestureRecognizer];
     
     // We might have enabled inline translation before application launched
@@ -420,6 +443,8 @@ id TMLLocalizeDate(NSDictionary *options, NSDate *date, NSString *format, ...) {
     else {
         [self teardownInlineTranslationGestureRecognizer];
     }
+    
+#endif
     
     [[TMLAnalytics sharedInstance] startAnalyticsTimerIfNecessary];
 }
@@ -893,12 +918,17 @@ id TMLLocalizeDate(NSDictionary *options, NSDate *date, NSString *format, ...) {
     if (self.translationActive == YES && disallowed == YES) {
         self.translationActive = NO;
     }
+    
+#if TARGET_OS_IOS || TARGET_OS_TV
+    
     if (disallowed == YES) {
         [self teardownTranslationActivationGestureRecognizer];
     }
     else {
         [self setupTranslationActivationGestureRecognizer];
     }
+    
+#endif
 }
 
 - (void)setTranslationActive:(BOOL)translationActive {
@@ -919,6 +949,9 @@ id TMLLocalizeDate(NSDictionary *options, NSDate *date, NSString *format, ...) {
         [userDefaults removeObjectForKey:TMLTranslationActiveDefaultsKey];
     }
     self.currentBundle = newBundle;
+    
+#if TARGET_OS_IOS || TARGET_OS_TV
+    
     if (translationActive == YES) {
         if ([[UIApplication sharedApplication] keyWindow] != nil) {
             [self setupInlineTranslationGestureRecognizer];
@@ -927,6 +960,8 @@ id TMLLocalizeDate(NSDictionary *options, NSDate *date, NSString *format, ...) {
     else {
         [self teardownInlineTranslationGestureRecognizer];
     }
+
+#endif
 }
 
 #pragma mark - Reseting
@@ -938,6 +973,8 @@ id TMLLocalizeDate(NSDictionary *options, NSDate *date, NSString *format, ...) {
 }
 
 #pragma mark - Gesture Recognizer
+
+#if TARGET_OS_IOS || TARGET_OS_TV
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer
 shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
@@ -1233,6 +1270,8 @@ shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRec
     [self presentAlertController:alert];
 }
 
+#endif
+
 #pragma mark - Authorization
 
 - (void)setCurrentUser:(TMLBasicUser *)currentUser {
@@ -1257,6 +1296,8 @@ shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRec
     }
     
 }
+
+#if TARGET_OS_IOS || TARGET_OS_TV
 
 - (void)acquireAccessToken {
     TMLAuthorizationViewController *authController = [[TMLAuthorizationViewController alloc] init];
@@ -1393,6 +1434,8 @@ shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRec
         [presenter dismissViewControllerAnimated:YES completion:completion];
     }
 }
+
+#endif
 
 #pragma mark - Block Options
 

@@ -29,7 +29,12 @@
  */
 
 #import <Foundation/Foundation.h>
+
+#if TARGET_OS_IOS || TARGET_OS_TV
+
 #import <UIKit/UIKit.h>
+
+#endif
 
 #import "TMLApplication.h"
 #import "TMLBasicUser.h"
@@ -38,8 +43,14 @@
 
 @protocol TMLDelegate <NSObject>
 @optional
+
+#if TARGET_OS_IOS || TARGET_OS_TV
+
 - (UIGestureRecognizer *)gestureRecognizerForInlineTranslation;
 - (UIGestureRecognizer *)gestureRecognizerForTranslationActivation;
+
+#endif
+
 - (BOOL)shouldSwitchToBundle:(TMLBundle *)bundle;
 @end
 

@@ -6,6 +6,8 @@
 //  Copyright © 2016 Translation Exchange. All rights reserved.
 //
 
+#if TARGET_OS_IOS || TARGET_OS_TV
+
 #import <UIKit/UIKit.h>
 
 @interface TMLAlertAction : NSObject
@@ -30,3 +32,5 @@
 - (void)addAction:(TMLAlertAction *)action;
 @property (strong, nonatomic) TMLAlertAction *preferredAction;
 @end
+
+#endif

@@ -28,7 +28,7 @@
  *  THE SOFTWARE.
  */
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #import "TMLDataToken.h"
 
 @interface TMLPipedToken : TMLDataToken

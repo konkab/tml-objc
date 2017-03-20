@@ -7,6 +7,9 @@
 //
 
 #import "TMLViewController.h"
+
+#if TARGET_OS_IOS || TARGET_OS_TV
+
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
 
@@ -18,3 +21,5 @@
 - (void)postedUserInfo:(NSDictionary *)userInfo;
 
 @end
+
+#endif
