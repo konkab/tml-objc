@@ -177,7 +177,7 @@ id TMLLocalizeDate(NSDictionary *options, NSDate *date, NSString *format, ...) {
 
 #if TARGET_OS_IOS || TARGET_OS_TV
 
-@interface TML()<UIGestureRecognizerDelegate, TMLAuthorizationViewControllerDelegate> {
+@interface TML() <UIGestureRecognizerDelegate, TMLAuthorizationViewControllerDelegate> {
     BOOL _observingNotifications;
     BOOL _checkingForBundleUpdate;
     NSDate *_lastBundleUpdateDate;
@@ -1296,6 +1296,7 @@ shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRec
     }
     
 }
+
 
 #if TARGET_OS_IOS || TARGET_OS_TV
 

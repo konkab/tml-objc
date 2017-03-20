@@ -151,6 +151,22 @@ completionBlock:^(TMLAPIResponse *apiResponse, NSURLResponse *response, NSError 
 }];
 }
 
+- (void)getProjects:(void (^)(NSArray *, TMLAPIResponse *, NSError *))completionBlock {
+    NSString *path = @"users/me/projects";
+    
+    [self get:path
+   parameters:nil completionBlock:^(TMLAPIResponse *apiResponse, NSURLResponse *response, NSError *error) {
+       if (completionBlock) {
+           NSArray *projects = nil;
+           if (apiResponse != nil) {
+               projects = [TMLAPISerializer materializeObject:apiResponse.results
+                                                   withClass:[TMLApplication class]];
+           }
+           completionBlock(projects, apiResponse, error);
+       }
+   }];
+}
+
 - (NSString *)applicationProjectPath {
     return [NSString stringWithFormat:@"projects/%@", self.applicationKey];
 }

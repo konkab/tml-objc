@@ -51,6 +51,7 @@
 #import "TMLLanguageSelectorViewController.h"
 #import "TMLViewController.h"
 #import "TMLWebViewController.h"
+#import "TMLWebWindowController.h"
 
 #import "NSAttributedString+TML.h"
 #import "NSObject+TML.h"
