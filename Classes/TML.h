@@ -76,7 +76,7 @@
 /**
  *  Holds the current user object
  */
-@property(nonatomic, readonly) TMLBasicUser *currentUser;
+@property(nonatomic, readwrite) TMLBasicUser *currentUser;
 
 /**
  *  Holds block options

@@ -203,7 +203,7 @@ id TMLLocalizeDate(NSDictionary *options, NSDate *date, NSString *format, ...) {
 @property(strong, nonatomic) TMLConfiguration *configuration;
 @property(strong, nonatomic) TMLAPIClient *apiClient;
 @property(nonatomic, readwrite) TMLBundle *currentBundle;
-@property(nonatomic, readwrite) TMLBasicUser *currentUser;
+//@property(nonatomic, readwrite) TMLBasicUser *currentUser;
 @end
 
 @implementation TML

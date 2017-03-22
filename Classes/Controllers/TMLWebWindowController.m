@@ -18,12 +18,14 @@
 
 @implementation TMLWebWindowController
 
-- (NSString *)windowNibName {
-    return @"TMLWebWindowController";
-}
-
 - (instancetype)init {
-    if (self = [super init]) {
+    NSWindow *window = [[NSWindow alloc] initWithContentRect:NSMakeRect(0.0f, 0.0f, 480.0f, 400.0f) styleMask:NSWindowStyleMaskTitled | NSWindowStyleMaskClosable backing:NSBackingStoreRetained defer:YES];
+    [window center];
+    window.maxSize = window.frame.size;
+    window.minSize = window.frame.size;
+    window.title = @"Authorization";
+    
+    if (self = [super initWithWindow:window]) {
         WKUserContentController *webContentController = [[WKUserContentController alloc] init];
         [webContentController addScriptMessageHandler:self name:@"tmlMessageHandler"];
         
@@ -33,7 +35,7 @@
         WKWebViewConfiguration *webViewConfig = [[WKWebViewConfiguration alloc] init];
         webViewConfig.userContentController = webContentController;
         
-        WKWebView *webView = [[WKWebView alloc] initWithFrame:CGRectZero configuration:webViewConfig];
+        WKWebView *webView = [[WKWebView alloc] initWithFrame:NSMakeRect(0.0f, 0.0f, 480.0f, 400.0f) configuration:webViewConfig];
         webView.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;
         webView.navigationDelegate = self;
         webView.UIDelegate = self;
@@ -46,14 +48,25 @@
     return self;
 }
 
-- (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL result))completionHandler {
-    completionHandler(YES);
+#pragma mark - WKNavigationDelegate
+- (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error {
+    
 }
 
-- (void)windowDidLoad {
-    [super windowDidLoad];
+- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
     
+}
+
+- (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation withError:(NSError *)error {
     
+}
+
+- (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation {
+    
+}
+
+- (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL result))completionHandler {
+    completionHandler(YES);
 }
 
 #pragma mark - WKScriptMessageHandler

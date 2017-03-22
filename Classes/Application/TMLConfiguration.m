@@ -181,7 +181,11 @@ NSString * const TMLPreviousLocaleDefaultsKey = @"previousLocale";
 }
 
 - (NSURL *)cdnURL {
-    return [self.cdnBaseURL URLByAppendingPathComponent:self.applicationKey];
+    if (self.applicationKey != nil) {
+        return [self.cdnBaseURL URLByAppendingPathComponent:self.applicationKey];
+    }
+    
+    return nil;
 }
 
 #pragma mark - Locales
