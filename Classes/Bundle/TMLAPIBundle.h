@@ -15,6 +15,7 @@
                  forSource:(NSString *)sourceKey;
 
 @property(nonatomic, assign) BOOL syncEnabled;
+@property(nonatomic, assign) BOOL syncAllLocales;
 - (BOOL)isSyncing;
 - (void)setNeedsSync;
 - (void)sync;

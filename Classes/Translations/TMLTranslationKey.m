@@ -217,16 +217,14 @@
     NSString *targetLocale = language.locale;
     NSString *label = self.label;
     
-    if ([targetLocale isEqualToString:ourLocale] == NO) {
-        TMLTranslation *translation = [self findFirstAcceptableTranslationForTokens:tokens
-                                                                         inLanguage:language];
-        
-        if (translation) {
-            label = translation.label;
-        }
-        else {
-            language = [[TML sharedInstance] languageForLocale:self.locale];
-        }
+    TMLTranslation *translation = [self findFirstAcceptableTranslationForTokens:tokens
+                                                                     inLanguage:language];
+    
+    if (translation) {
+        label = translation.label;
+    }
+    else {
+        language = [[TML sharedInstance] languageForLocale:self.locale];
     }
     
     // We may have a label with an implied decorated token,

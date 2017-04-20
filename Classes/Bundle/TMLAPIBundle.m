@@ -320,24 +320,6 @@
     syncQueue.suspended = YES;
     
     [self syncMetaData];
-    NSMutableArray *locales = [self.availableLocales mutableCopy];
-    if (locales == nil) {
-        locales = [NSMutableArray array];
-    }
-    
-    NSString *defaultLocale = TMLDefaultLocale();
-    if (defaultLocale != nil && [locales containsObject:defaultLocale] == NO) {
-        [locales addObject:defaultLocale];
-    }
-    
-    NSString *currentLocale = TMLCurrentLocale();
-    if (currentLocale != nil && [locales containsObject:currentLocale] == NO) {
-        [locales addObject:currentLocale];
-    }
-    
-    if (locales.count > 0) {
-        [self syncLocales:locales];
-    }
     [self syncAddedTranslationKeys];
     syncQueue.suspended = NO;
 }
@@ -364,6 +346,8 @@
                                      if (fileError != nil) {
                                          [errors addObject:fileError];
                                      }
+                                     
+                                     [self syncLocales];
                                      
                                      [self didFinishSyncOperationWithErrors:errors];
                                  }];
@@ -419,7 +403,29 @@
     }]];
 }
 
-- (void)syncLocales:(NSArray *)locales {
+- (void)syncLocales {
+    NSMutableArray *locales = nil;
+    
+    if (self.syncAllLocales) {
+        locales = [self.locales mutableCopy];
+    } else {
+        locales = [self.availableLocales mutableCopy];
+    }
+    
+    if (locales == nil) {
+        locales = [NSMutableArray array];
+    }
+    
+    NSString *defaultLocale = TMLDefaultLocale();
+    if (defaultLocale != nil && [locales containsObject:defaultLocale] == NO) {
+        [locales addObject:defaultLocale];
+    }
+    
+    NSString *currentLocale = TMLCurrentLocale();
+    if (currentLocale != nil && [locales containsObject:currentLocale] == NO) {
+        [locales addObject:currentLocale];
+    }
+    
     if (locales.count == 0) {
         return;
     }
